@@ -10,6 +10,7 @@ public class TaskBar : MonoBehaviour
     public GameObject WorkSapce;
     public GameObject ChatRoom;
     private int m;
+    private int w;
     public Image MusicLayer;
     public Image WorkLayer;
     public Image ChatLayer;
@@ -18,6 +19,7 @@ public class TaskBar : MonoBehaviour
     void Start()
     {
          m=0;
+         w=0;
         
     }
 
@@ -40,6 +42,19 @@ public class TaskBar : MonoBehaviour
 
         }
 
+    }
+    public void WorkApp(){
+        if(w==0){
+            WorkSapce.SetActive(true);
+            w+=1;
+            WorkLayer.color=new Color(1,0.55f,0,0.3f);
+        }
+        else{
+            WorkSapce.SetActive(false);
+            w=0;
+            WorkLayer.color=new Color(1,0.55f,0,0);
+
+        }
     }
 
 

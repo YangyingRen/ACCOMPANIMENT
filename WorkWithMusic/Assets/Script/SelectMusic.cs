@@ -12,6 +12,7 @@ public class SelectMusic : MonoBehaviour
     public Button Playing;
     public Sprite Play;
     public Sprite Pause;
+    public AudioSource OnPlayingMusic;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,6 +22,7 @@ public class SelectMusic : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        OnPlayingMusic=Music[i];
         if(Music[i].isPlaying){
         Playing.GetComponent<Image>().sprite=Pause;
 
