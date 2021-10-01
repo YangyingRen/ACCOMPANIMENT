@@ -11,15 +11,19 @@ public class TaskBar : MonoBehaviour
     public GameObject ChatRoom;
     private int m;
     private int w;
+    private int c;
     public Image MusicLayer;
     public Image WorkLayer;
     public Image ChatLayer;
+    public GameObject OnPlayingMusic;
+    private AudioSource Music;
 
     // Start is called before the first frame update
     void Start()
     {
          m=0;
          w=0;
+         c=0;
         
     }
 
@@ -53,6 +57,21 @@ public class TaskBar : MonoBehaviour
             WorkSapce.SetActive(false);
             w=0;
             WorkLayer.color=new Color(1,0.55f,0,0);
+
+        }
+    }
+    public void ChatApp(){
+        Music=OnPlayingMusic.GetComponent<SelectMusic>().OnPlayingMusic;
+        if(c==0){
+            ChatRoom.SetActive(true);
+            c+=1;
+            ChatLayer.color=new Color(1,0.55f,0,0.3f);
+            Music.Pause();
+        }
+        else{
+            ChatRoom.SetActive(false);
+            c=0;
+            ChatLayer.color=new Color(1,0.55f,0,0);
 
         }
     }

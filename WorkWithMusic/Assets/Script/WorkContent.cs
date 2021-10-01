@@ -13,6 +13,7 @@ public class WorkContent : MonoBehaviour
     private int i=0;
     public GameObject InputField;
     public GameObject OnPlayingMusic;
+    private AudioSource Music;
 
     // Start is called before the first frame update
     void Start()
@@ -22,21 +23,25 @@ public class WorkContent : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {   AudioSource Music=OnPlayingMusic.GetComponent<SelectMusic>().OnPlayingMusic;
-        WrittenText.text=TypeText.text;
-       if(InputField.GetComponent<InputField>().text!=null){
-           if(Input.anyKey){
+    { if(OnPlayingMusic.GetComponent<SelectMusic>().OnPlayingMusic!=null){
+        Music=OnPlayingMusic.GetComponent<SelectMusic>().OnPlayingMusic;
+        if(InputField.GetComponent<InputField>().text!=null){
+        if(Input.anyKey){
                Music.volume+=0.01f;
            }
-           else{
-               Music.volume-=0.005f*Time.deltaTime;
+        else{
+               Music.volume-=0.01f*Time.deltaTime;
            }
 
        }
+    }
+        WrittenText.text=TypeText.text;
+    
        SampleText.text=Plot[i].text;
        if(WrittenText.text==SampleText.text){
            if(Input.GetKeyDown(KeyCode.Return)){
                i+=1;
+               
            }
        }
 
