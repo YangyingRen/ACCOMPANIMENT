@@ -628,7 +628,7 @@ MonoBehaviour:
   m_InputType: 0
   m_AsteriskChar: 42
   m_KeyboardType: 0
-  m_LineType: 0
+  m_LineType: 1
   m_HideMobileInput: 0
   m_CharacterValidation: 0
   m_CharacterLimit: 0
@@ -695,6 +695,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: Text 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7442057845957925958, guid: af955c1c205766d4388825923c2081e0, type: 3}
+      propertyPath: m_FontData.m_BestFit
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7442057845957925958, guid: af955c1c205766d4388825923c2081e0, type: 3}
+      propertyPath: m_FontData.m_MaxSize
+      value: 45
+      objectReference: {fileID: 0}
+    - target: {fileID: 7442057845957925958, guid: af955c1c205766d4388825923c2081e0, type: 3}
+      propertyPath: m_FontData.m_MinSize
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7442057845957925958, guid: af955c1c205766d4388825923c2081e0, type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 7442057845957925958, guid: af955c1c205766d4388825923c2081e0, type: 3}
+      propertyPath: m_FontData.m_LineSpacing
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 7442057845957925959, guid: af955c1c205766d4388825923c2081e0, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -713,7 +733,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7442057845957925959, guid: af955c1c205766d4388825923c2081e0, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7442057845957925959, guid: af955c1c205766d4388825923c2081e0, type: 3}
       propertyPath: m_AnchorMin.x
@@ -721,15 +741,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7442057845957925959, guid: af955c1c205766d4388825923c2081e0, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7442057845957925959, guid: af955c1c205766d4388825923c2081e0, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 496.28
+      value: 486.5
       objectReference: {fileID: 0}
     - target: {fileID: 7442057845957925959, guid: af955c1c205766d4388825923c2081e0, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 13.677811
+      value: 25.47
       objectReference: {fileID: 0}
     - target: {fileID: 7442057845957925959, guid: af955c1c205766d4388825923c2081e0, type: 3}
       propertyPath: m_LocalPosition.x
@@ -761,11 +781,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7442057845957925959, guid: af955c1c205766d4388825923c2081e0, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 248.14
+      value: 243.25
       objectReference: {fileID: 0}
     - target: {fileID: 7442057845957925959, guid: af955c1c205766d4388825923c2081e0, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -6.8389053
+      value: -12.735
       objectReference: {fileID: 0}
     - target: {fileID: 7442057845957925959, guid: af955c1c205766d4388825923c2081e0, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -817,7 +837,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0}
   m_AnchoredPosition: {x: 7, y: 0}
-  m_SizeDelta: {x: -18.77, y: 13.677811}
+  m_SizeDelta: {x: -18.77, y: 25.47}
   m_Pivot: {x: 0, y: 0}
 --- !u!114 &340213180
 MonoBehaviour:
@@ -841,7 +861,7 @@ MonoBehaviour:
   m_ChildForceExpandWidth: 1
   m_ChildForceExpandHeight: 0
   m_ChildControlWidth: 0
-  m_ChildControlHeight: 1
+  m_ChildControlHeight: 0
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
@@ -1935,7 +1955,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 269964560ccfdb3429f6a3ed53acaf67, type: 3}
     m_FontSize: 14
     m_FontStyle: 0
     m_BestFit: 0
@@ -1947,7 +1967,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Button
+  m_Text: Respond
 --- !u!222 &625176159
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2555,6 +2575,39 @@ MonoBehaviour:
   i: 1
   speed: 0.1
   ReceiveMessage: {fileID: 843454871}
+  Bargain:
+  - Hey! I am talking to you!
+  - Respond ASAP!
+  - Please reply!!!!!
+  - I want to meet you now!
+  - "(\u256F\u2594\u76BF\u2594)\u256F"
+  - "/(\u3112o\u3112)/~~"
+  - ~~>_<~~
+  - ~W~~~~~~~~~
+  - Where are you now!
+  - Please! I beg you don't go!
+  Talk:
+  - Hey, are you busy now?
+  - Do you want to hang out?
+  - Look I know maybe you don't have time.
+  - I really want to talk to you.
+  - You know that I am in a bad situation.
+  - I think right now only you can help me.
+  - You are the only one that I can trust.
+  - So please call me when you see the messages.
+  - I should contact you ealier.
+  - Hope those things would not bother you.
+  Respond:
+  - I am busy.
+  - No, I am working!
+  - Sorry not this time!
+  - Maybe later???
+  - Seriously now is not a good time.
+  - Busy!!!!!
+  - Please stop sending me messages!
+  - I can't concentrate!
+  - One moment please.
+  - Just wait a minute.
 --- !u!1 &1035391663
 GameObject:
   m_ObjectHideFlags: 0
@@ -3566,7 +3619,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 282.8863, y: -175.92201}
+  m_AnchoredPosition: {x: 282.8863, y: -175.922}
   m_SizeDelta: {x: -571.3142, y: -427.1427}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1551784151
@@ -3933,9 +3986,9 @@ MonoBehaviour:
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: New Text
+    m_VerticalOverflow: 1
+    m_LineSpacing: 2
+  m_Text: 
 --- !u!222 &1600952535
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4688,9 +4741,9 @@ MonoBehaviour:
     m_Alignment: 0
     m_AlignByGeometry: 0
     m_RichText: 0
-    m_HorizontalOverflow: 1
-    m_VerticalOverflow: 0
-    m_LineSpacing: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 1
+    m_LineSpacing: 2
   m_Text: 
 --- !u!222 &1941198295
 CanvasRenderer:
@@ -4864,7 +4917,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: -14, y: 0}
+  m_SizeDelta: {x: -23.78, y: -10.14}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1985966299
 MonoBehaviour:
@@ -4952,7 +5005,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -268.26004, y: 2.4259033}
+  m_AnchoredPosition: {x: -268.26013, y: 2.4259033}
   m_SizeDelta: {x: -536.53, y: -4.8517}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2099965409
@@ -5061,9 +5114,9 @@ MonoBehaviour:
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
+    m_VerticalOverflow: 1
     m_LineSpacing: 2
-  m_Text: New Text
+  m_Text: 
 --- !u!222 &2100903709
 CanvasRenderer:
   m_ObjectHideFlags: 0
